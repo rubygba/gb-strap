@@ -1,0 +1,303 @@
+/* My css strap */
+
+/* 常量 */
+$txtGray = #666
+$txtRed = #cc0a0a
+$borderGray = #f0f0f0
+$bgGray = #fafafa
+
+/* 组件components */
+
+/* 统一盒模型 */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Reset HTML5 */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+html {
+  min-height: 100%;
+}
+body {
+  font-family: "Helvetica Neue", Helvetica, "Microsoft Yahei", "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #fff;
+  min-width: 1000px
+}
+a {
+  color: #428bca;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.width-1 {
+  width: 8.33%;
+}
+.width15 {
+  width: 12.5%;
+}
+.width-2 {
+  width: 16.66%;
+}
+.width-3 {
+  width: 24.99%;
+}
+.width-4 {
+  width: 33.33%;
+}
+.width-5 {
+  width: 41.66%;
+}
+.width-6 {
+  width: 50%;
+}
+.width-7 {
+  width: 58.33%;
+}
+.width-8 {
+  width: 66.66%;
+}
+.width-9 {
+  width: 75%;
+}
+.width-10 {
+  width: 83.33%;
+}
+.width-11 {
+  width: 91.66%;
+}
+.width-12 {
+  width: 100%;
+}
+
+.float-left {
+  float: left!important;
+}
+.float-right {
+  float: right!important;
+}
+
+.offset-1 {
+  padding-left: 10px;
+}
+.offset15 {
+  padding-left: 15px;
+}
+.offset-2 {
+  padding-left: 20px;
+}
+/* end common layout */
+
+.nav-row:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.nav-row>ul>li {
+  float: left;
+}
+
+.txt-center {
+  text-align: center;
+}
+.txt-left {
+  text-align: left;
+}
+.txt-right {
+  text-align: right;
+}
+
+.txt-black {
+  color: #000;
+}
+.txt-gray {
+  color: $txtGray;
+}
+.txt-red {
+  color: $txtRed;
+}
+
+.txt-bold {
+  font-weight: bold;
+}
+
+.button {
+  display: inline-block;
+  height: 42px;
+  padding: 0 21px;
+  margin-bottom: 0;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 0;
+}
+.button:hover {
+  transition: background-color 0.5s;
+  -moz-transition: background-color 0.5s;
+  -webkit-transition: background-color 0.5s;
+  -o-transition: background-color 0.5s;
+}
+.button-small {
+  line-height: 30px;
+  height: 30px;
+  font-size: 14px;
+}
+.button-xs {
+  line-height: 22px;
+  height: 22px;
+  font-size: 12px;
+  padding: 0 10px;
+}
+
+.button-red {
+  color: #fff;
+  background-color: $txtRed;
+  border-color: $txtRed;
+}
+.button-red:hover {
+  color: $txtRed;
+  background-color: #fff;
+}
+.button-white {
+  color: #000;
+  background-color: #fff;
+  border-color: $borderGray
+}
+.button-white:hover {
+  color: #000;
+  background-color: $bgGray;
+}
+.button-pink {
+  color: $txtRed;
+  background-color: #fcc;
+  border-color: $txtRed;
+}
+.button-pink:hover {
+  color: $txtRed;
+  background-color: #fff;
+}
+.button-gray {
+  color: #fff;
+  background-color: #ccc;
+  border-color: $borderGray;
+}
+.button-gray:hover {
+  color: #000;
+  background-color: #fff;
+}
+
+.hr-dashed {
+  margin: 0;
+  border: 0; /* reset */
+  border-top: 1px dashed $borderGray;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+//.clearfix
+//  *+height:1%

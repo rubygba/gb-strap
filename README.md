@@ -1,7 +1,7 @@
-#gb-strap
+# gb-strap
 快速布局css样式
 
-##Guide
+## Guide
 RESET HTML5: set boder-box, unify margin and paading, remove text-decoration
 
 Classes

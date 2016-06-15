@@ -118,6 +118,11 @@ a {
   background-color: transparent;
 }
 
+.wrapper {
+  width: 1000px;
+  margin: 0 auto;
+}
+
 .width-1 {
   width: 8.33%;
 }
@@ -176,15 +181,15 @@ a {
 }
 /* end common layout */
 
-.nav-row:after {
-  content: ".";
-  display: block;
-  height: 0;
-  clear: both;
-  visibility: hidden;
-}
-.nav-row>ul>li {
+ul.float-row>li {
   float: left;
+}
+
+.bg-cross {
+  position: absolute;
+  z-index: -2;
+  height: 200px;
+  background: url("bg.jpg") no-repeat scroll center top;
 }
 
 .txt-center {
@@ -237,6 +242,7 @@ a {
   -webkit-transition: background-color 0.5s;
   -o-transition: background-color 0.5s;
 }
+
 .button-small {
   line-height: 30px;
   height: 30px;

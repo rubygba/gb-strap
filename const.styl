@@ -1,0 +1,82 @@
+/* 常量 */
+$txtGray = #666
+$txtRed = #cc0a0a
+$borderGray = #f0f0f0
+$bgGray = #fafafa
+
+/* 组件components */
+.button {
+  display: inline-block;
+  height: 42px;
+  padding: 0 21px;
+  margin-bottom: 0;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 0;
+}
+.button:hover {
+  transition: background-color 0.5s;
+  -moz-transition: background-color 0.5s;
+  -webkit-transition: background-color 0.5s;
+  -o-transition: background-color 0.5s;
+}
+
+.button-small {
+  line-height: 30px;
+  height: 30px;
+  font-size: 14px;
+}
+.button-xs {
+  line-height: 22px;
+  height: 22px;
+  font-size: 12px;
+  padding: 0 10px;
+}
+
+.button-red {
+  color: #fff;
+  background-color: $txtRed;
+  border-color: $txtRed;
+}
+.button-red:hover {
+  color: $txtRed;
+  background-color: #fff;
+}
+.button-white {
+  color: #000;
+  background-color: #fff;
+  border-color: $borderGray
+}
+.button-white:hover {
+  color: #000;
+  background-color: $bgGray;
+}
+.button-pink {
+  color: $txtRed;
+  background-color: #fcc;
+  border-color: $txtRed;
+}
+.button-pink:hover {
+  color: $txtRed;
+  background-color: #fff;
+}
+.button-gray {
+  color: #fff;
+  background-color: #ccc;
+  border-color: $borderGray;
+}
+.button-gray:hover {
+  color: #000;
+  background-color: #fff;
+}
